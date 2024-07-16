@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+body {
+    min-width: 1200px;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+/* header部 開始*/
+
+.header_1 {
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #000000;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    z-index: 40;
+}
+
+.header_2 {
+    margin-top: 10px;
+}
+
+.header_3 {
+    display: flex;
+    margin-top: 1.5rem;
+    margin-left: 10rem;
+}
+
+.header_3 a {
+    text-decoration-line: none;
+    color: white;
+}
+
+#Mouse_a p::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #00bfff;
+    transition: .3s;
+    transform: translateX(-50%);
+}
+
+#Mouse_a p:hover::after {
+    width: 100%;
+}
+
+#keyboard_a p::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #ba55d3;
+    transition: .3s;
+    transform: translateX(-50%);
+}
+
+#keyboard_a p:hover::after {
+    width: 100%;
+}
+
+#Audio_a p::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #ffa500;
+    transition: .3s;
+    transform: translateX(-50%);
+}
+
+#Audio_a p:hover::after {
+    width: 100%;
+}
+
+.header_p1 {
+    margin-right: 70px;
+}
+
+.header_p2 {
+    border-left: 6px solid white;
+    padding-left: 10px;
+}
+
+
+#logo {
+    margin-left: 5rem;
+    margin-top: 0.5rem;
+}
+
+#logo a {
+    margin-right: 1rem;
+}
+
+/* header部 終了 */
+
+.page {
+    margin-top: 30px;
+    width: 50%;
+    margin-left: 50px;
+    background-color: white;
+}
+
+.page_img {
+    margin-top: 100px;
+}
+
+.page1 {
+    width: 1200px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.page1_img {
+    width: 50%;
+}
+
+.page1_p {
+    width: 50%;
+    margin-left: 50px;
+    padding-top: 50px;
+}

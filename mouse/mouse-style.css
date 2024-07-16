@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+.mouse_wrap {
+    background-image: url(img/mouse背景.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 5%;
+    margin-top: 100px;
+}
+
+/* topページ */
+
+.mouse_content {
+    height: 500px;
+}
+
+.mouse_content h1 {
+    color: white;
+    margin-bottom: 0;
+}
+
+.mouse_content hr {
+    text-align: left;
+    margin-left: 0;
+}
+
+.mouse_content_1 {
+    padding: 100px;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* topページ　終了 */
+
+.column2 {
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+/* sideバー */
+
+.column1 {
+    width: 20%;
+    display: flex;
+    padding-bottom: 100px;
+}
+
+aside {
+    margin-top: 70px;
+}
+
+.side_main {
+    position: sticky;
+    top: 150px;
+    margin-left: 35px;
+}
+
+.side a {
+    text-decoration-line: none;
+    color: black;
+    font-size: 11px;
+}
+
+.side a:hover {
+    text-decoration: underline;
+}
+
+details {
+    margin-bottom: 25px;
+}
+
+details[open] a {
+    animation: anime 0.6s;
+    transform-origin: top;
+}
+
+@keyframes anime {
+    0% {
+        opacity: 0;
+        transform: scale(1, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1, 1)
+    }
+}
+
+/* sideバー　終了 */
+
+/* mainページ */
+
+.mouse_main {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: white;
+}
+
+.mouse_main p {
+    color: black;
+}
+
+.mouse_main1 {
+    width: 100%;
+}
+
+.mouse_main1_p {
+    margin-left: 10px;
+}
+
+
+.mouse_main1_flex {
+    display: flex;
+}
+
+.mouse_main1_flex1 {
+    width: 60%;
+}
+
+.section1 {
+    text-align: left;
+}
+
+#mouse_main_title,
+#mouse_main_title1,
+#mouse_main_title2,
+#mouse_main_title3,
+#mouse_main_title4 {
+    border-left: solid 7px;
+}
+
+#mouse_main_title h2,
+#mouse_main_title1 h2,
+#mouse_main_title2 h2,
+#mouse_main_title3 h2,
+#mouse_main_title4 h2 {
+    margin-left: 15px;
+}
+
+.mouse_all {
+    margin-bottom: 100px;
+}
+
+.section_div {
+    background-color: #27acd9;
+}
+
+
+/* 購入ボタン */
+
+.section2 {
+    margin-top: 10px;
+}
+
+a.btn_01 {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 60px;
+    margin: auto;
+    padding: 10px 15px;
+    font-weight: bold;
+    border: 2px solid #27acd9;
+    color: #27acd9;
+    transition: 1s;
+}
+
+a.btn_01:hover {
+    color: #fff;
+    background: #27acd9;
+}
+
+.footer_sub {
+    height: 200px;
+}
+
+/* 購入ボタン　終了 */

@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+.scroll_content {
+    width: 300px;
+}
+
+.scroll_content img {
+    transition: .3s ease-in-out;
+}
+
+.scroll_content1:hover img {
+    transform: scale(1.2);
+}
+
+.slideshow {
+    display: flex;
+}
+
+.scroll_all {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+    padding-top: 80px;
+}
+
+.scroll_all li {
+    list-style: none;
+    padding-right: 50px;
+}
+
+.scroll_all ul {
+    padding: 0;
+}
+
+.slideshow {
+    display: flex;
+    margin-bottom: 100px;
+    animation: loop-slide 60s infinite linear 1s both;
+}
+
+#index_hr {
+    margin: 0;
+    color: black;
+}
+
+
+@keyframes loop-slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
